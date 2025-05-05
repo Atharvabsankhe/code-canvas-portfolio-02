@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Hero = () => {
   return (
@@ -27,12 +28,15 @@ const Hero = () => {
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center">
-            <div className="relative overflow-visible rounded-full w-72 h-72 md:w-96 md:h-96 border-4 border-primary shadow-lg">
-              <img 
-                src="/lovable-uploads/aea1f064-9663-4803-b4bb-675522107f66.png" 
-                alt="Atharva Sankhe Profile" 
-                className="object-contain w-full h-full"
-              />
+            <div className="relative w-72 h-72 md:w-80 md:h-80">
+              <Avatar className="w-full h-full border-4 border-primary shadow-lg">
+                <AvatarImage 
+                  src="/lovable-uploads/aea1f064-9663-4803-b4bb-675522107f66.png" 
+                  alt="Atharva Sankhe Profile"
+                  className="object-cover"
+                />
+                <AvatarFallback>AS</AvatarFallback>
+              </Avatar>
             </div>
           </div>
         </div>
