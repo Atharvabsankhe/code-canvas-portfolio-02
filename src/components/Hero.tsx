@@ -1,0 +1,43 @@
+
+import { Button } from "@/components/ui/button";
+
+const Hero = () => {
+  return (
+    <section id="home" className="py-20 md:py-32">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row items-center gap-12">
+          <div className="md:w-1/2 space-y-6">
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+              Hi, I'm <span className="text-primary">Your Name</span>
+            </h1>
+            <h2 className="text-2xl md:text-3xl text-gray-700">
+              Software Developer & Computer Engineering Student
+            </h2>
+            <p className="text-lg text-gray-600">
+              I build innovative software solutions and applications with a passion for clean code and user-centered design.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Button asChild>
+                <a href="#contact">Get In Touch</a>
+              </Button>
+              <Button variant="outline" asChild>
+                <a href="#projects">View Projects</a>
+              </Button>
+            </div>
+          </div>
+          <div className="md:w-1/2 flex justify-center">
+            <div className="relative overflow-hidden rounded-full w-64 h-64 md:w-80 md:h-80 border-4 border-primary shadow-lg">
+              <img 
+                src="/lovable-uploads/aea1f064-9663-4803-b4bb-675522107f66.png" 
+                alt="Profile" 
+                className="object-cover w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
