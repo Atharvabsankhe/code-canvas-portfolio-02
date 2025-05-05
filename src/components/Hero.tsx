@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2 space-y-6">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-              Hi, I'm <span className="text-primary">Your Name</span>
+              Hi, I'm <span className="text-primary">Atharva Sankhe</span>
             </h1>
             <h2 className="text-2xl md:text-3xl text-gray-700">
               Software Developer & Computer Engineering Student
@@ -26,11 +27,11 @@ const Hero = () => {
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center">
-            <div className="relative overflow-hidden rounded-full w-64 h-64 md:w-80 md:h-80 border-4 border-primary shadow-lg">
+            <div className="relative overflow-visible rounded-full w-72 h-72 md:w-96 md:h-96 border-4 border-primary shadow-lg">
               <img 
                 src="/lovable-uploads/aea1f064-9663-4803-b4bb-675522107f66.png" 
-                alt="Profile" 
-                className="object-cover w-full h-full"
+                alt="Atharva Sankhe Profile" 
+                className="object-contain w-full h-full"
               />
             </div>
           </div>
