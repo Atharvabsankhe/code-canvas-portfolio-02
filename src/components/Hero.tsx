@@ -31,7 +31,7 @@ const Hero = () => {
             <div className="relative w-72 h-72 md:w-80 md:h-80">
               <Avatar className="w-full h-full border-4 border-primary shadow-lg">
                 <AvatarImage 
-                  src="/lovable-uploads/aea1f064-9663-4803-b4bb-675522107f66.png" 
+                  src="/lovable-uploads/dafcfe97-fc70-4ca5-a166-c7a1d1305ee2.png" 
                   alt="Atharva Sankhe Profile"
                   className="object-cover"
                 />
